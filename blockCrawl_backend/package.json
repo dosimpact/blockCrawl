@@ -1,0 +1,67 @@
+{
+  "name": "blockcrawl_backend",
+  "version": "1.0.0",
+  "description": "blockcrawling backend Dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec babel-node src/test/testMode.js",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node build/server.js",
+    "build": "babel src -d build",
+    "postbuild": "npx copy src/api/**/*.graphql ./build/api",
+    "crawltest": "nodemon --exec babel-node pupeeter/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DosImpact/blockCrawl_backend.git"
+  },
+  "keywords": [
+    "block",
+    "crawl"
+  ],
+  "author": "DosImpact",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DosImpact/blockCrawl_backend/issues"
+  },
+  "homepage": "https://github.com/DosImpact/blockCrawl_backend#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/runtime": "^7.9.2",
+    "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cookie-parser": "^1.4.5",
+    "copy": "^0.3.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.11.1",
+    "csv-stringify": "^5.5.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql-tools": "^5.0.0",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "merge-graphql-schemas": "^1.7.8",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.24",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "puppeteer": "^3.3.0",
+    "puppeteer-extra": "^3.1.12",
+    "puppeteer-extra-plugin-stealth": "^2.4.13",
+    "redux": "^4.0.5",
+    "saslprep": "^1.0.3",
+    "supports-color": "^7.1.0",
+    "xlsx": "^0.16.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "nodemon": "^2.0.3"
+  }
+}
