@@ -1,8 +1,68 @@
-# Crawlling 아카이브
 
-# 교육용 블록코딩을 활용한 웹자동화 제작 플렛폼
+## 교육용 블록코딩을 활용한 웹자동화 제작 플렛폼
 
-# 설치 및 실행
+
+## 개발동기
+
+```c
+사무직 업무를 하는데 있어 매번 반복적인 업무가 있습니다. 바로 데이터를 수집하고 처리하는 일입니다.
+매번 이런 단순하고 동일한 과정의 업무을 처리하기위해 업무 자동화의 니즈가 증가합니다.
+하지만 웹 자동화 기술은 일반 사무직 근로자들이 배우려면 상당한 러닝 커브가 있습니다.
+언어의 자체 기초문법을 배우고 로직 구현을 위해서는 최소 24시간의 학습 시간이 필요합니다.
+그렇다고 단순히 자료 조사를 위해 외주 작업을 맡기기에는 무리가 있어 결국 반복적인 업무를 직접 하게됩니다.
+
+
+따라서 누구나 쉽게 GUI환경에서 자동화 로직을 구현할 수 있는 개발 플랫폼을 만들게 되었습니다.
+스크립트 코드 작성없이 누구나 손쉽게 교육용 블록코딩으로
+자동화 소프트웨어를 만들어 볼 수 있습니다.
+그리고 잘 만든 블록 로직을 다른 사람과 공유하고 데이터 분석이 가능한 클라우드 플랫폼이 최종 목표입니다.
+```
+
+## 개발 목표
+
+```
+1. 블록코딩 시스템을 완성하여 웹문서의 데이터를 수집하고, 이미지 및 PDF 정보도 수집할 수 있습니다.
+2. 빅데이터 수집을 위한 시스템을 만들고 수집된 정보를 엑셀로 다운받을 수 있습니다.
+```
+
+## 주요 기능
+
+```
+블록코딩으로
+웹자동화 로직구현 가능
+
+GoToPage
+특정 URL페이지 이동
+
+Get Selector
+HTML 데이터 수집
+
+Get PDF/IMG
+현재 페이지를 PDF,IMG로 변환
+
+```
+
+```
+다수의 ULR 과 페이지당 테그 입력하여 엑셀데이터 추출이 가능합니다.
+
+예시
+금융데이터 수집
+커뮤니티사이트 데이터 수집
+```
+
+## 구조
+
+![./Docs/blockcrawl_arch.png](./Docs/blockcrawl_arch.png)
+
+## WebUI & demo
+
+![demo1.gif](./Docs/demo1.gif)
+![demo2.gif](./Docs/demo2.gif)
+![demo3.gif](./Docs/demo3.gif)
+![demo4.gif](./Docs/demo4.gif)
+
+
+## 설치 및 실행
 
 1. front-end, back-end 깃허브 클론
 
@@ -53,68 +113,9 @@ $ nodemon --exec babel-node src/server.js
 ✔ puppeteer is running
 ```
 
-# 개발동기
+## 베포 하기
 
-```c
-사무직 업무를 하는데 있어 매번 반복적인 업무가 있습니다. 바로 데이터를 수집하고 처리하는 일입니다.
-매번 이런 단순하고 동일한 과정의 업무을 처리하기위해 업무 자동화의 니즈가 증가합니다.
-하지만 웹 자동화 기술은 일반 사무직 근로자들이 배우려면 상당한 러닝 커브가 있습니다.
-언어의 자체 기초문법을 배우고 로직 구현을 위해서는 최소 24시간의 학습 시간이 필요합니다.
-그렇다고 단순히 자료 조사를 위해 외주 작업을 맡기기에는 무리가 있어 결국 반복적인 업무를 직접 하게됩니다.
-
-
-따라서 누구나 쉽게 GUI환경에서 자동화 로직을 구현할 수 있는 개발 플랫폼을 만들게 되었습니다.
-스크립트 코드 작성없이 누구나 손쉽게 교육용 블록코딩으로
-자동화 소프트웨어를 만들어 볼 수 있습니다.
-그리고 잘 만든 블록 로직을 다른 사람과 공유하고 데이터 분석이 가능한 클라우드 플랫폼이 최종 목표입니다.
-```
-
-# 개발 목표
-
-```
-1. 블록코딩 시스템을 완성하여 웹문서의 데이터를 수집하고, 이미지 및 PDF 정보도 수집할 수 있습니다.
-2. 빅데이터 수집을 위한 시스템을 만들고 수집된 정보를 엑셀로 다운받을 수 있습니다.
-```
-
-# 주요 기능
-
-```
-블록코딩으로
-웹자동화 로직구현 가능
-
-GoToPage
-특정 URL페이지 이동
-
-Get Selector
-HTML 데이터 수집
-
-Get PDF/IMG
-현재 페이지를 PDF,IMG로 변환
-
-```
-
-```
-다수의 ULR 과 페이지당 테그 입력하여 엑셀데이터 추출이 가능합니다.
-
-예시
-금융데이터 수집
-커뮤니티사이트 데이터 수집
-```
-
-# 구조
-
-![./Docs/blockcrawl_arch.png](./Docs/blockcrawl_arch.png)
-
-# WebUI & demo
-
-![demo1.gif](./Docs/demo1.gif)
-![demo2.gif](./Docs/demo2.gif)
-![demo3.gif](./Docs/demo3.gif)
-![demo4.gif](./Docs/demo4.gif)
-
-# 베포 하기
-
-# FrontSide Docker Devops - DevServer Container
+## FrontSide Docker Devops - DevServer Container
 
 - STEP1 .dockerignore
 
@@ -169,7 +170,7 @@ docker logs bc_front
 docker exec -it bc_front /bin/bash
 ```
 
-# ServerSide Docker Devops - DevServer Container
+## ServerSide Docker Devops - DevServer Container
 
 - STEP1 .dockerignore
 
@@ -235,7 +236,7 @@ docker exec -it bc_back /bin/bash
 pm2 monit
 ```
 
-# 활용 기술
+## 활용 기술
 
 ```
 PC 빌드
@@ -248,7 +249,7 @@ Back 	 Node.js, Express, Graphql-yoga, multer/s3, puppeteer, Prisma
 Devops   NCP,Docker, Netlify, AWS S3,
 ```
 
-# 래퍼런스
+## 래퍼런스
 
 ```
 깃허브 주소
@@ -263,6 +264,6 @@ https://drive.google.com/file/d/1PRBB5QHYw0ZnwUi3E5V3t8-hyRpMkq1E/view?usp=shari
 
 ```
 
-# 이전 버전 Docs
+## 이전 버전 Docs
 
 [./Docs/deprecated.md](./Docs/deprecated.md)
